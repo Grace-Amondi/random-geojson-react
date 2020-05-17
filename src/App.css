@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-y: hidden;
+  background-color: #e1f5fe;
+  /* height: 100vh; */
+  font-size: 18px;
+  font-family: 'Patrick Hand', cursive;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p {
+  font-size: 18px;
+  font-family: 'Patrick Hand', cursive;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  font-size: 18px;
+  font-family: 'Patrick Hand', cursive;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+li {
+  font-size: 18px;
+  font-family: 'Patrick Hand', cursive;
 }
 
-.App-link {
-  color: #61dafb;
+#map {
+  height: 100vh;
+  /* display: initial; */
+  /* z-index: -1; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input[type=range]+.thumb {
+  background-color: #27b7e2;
+}
+
+span {
+  color: black;
+}
+
+label {
+  color: black;
+  font-size: 18px;
+}
+
+.mapboxgl-popup {
+  max-width: 400px;
+  font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(42, 41, 41);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgb(42, 41, 41);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: rgb(42, 41, 41);
 }
